@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>圈圈叉叉小遊戲</title>
+  <style>
+    .row {
+      display: flex;
+      justify-content: space-around;
+      border-bottom: 1px solid #000000;
+      width: 302px;
+      height: 101px;
+    }
+    
+    .row:last-child {
+      border: 0;
+    }
+
+    .row .grid {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+      border-right: 1px solid #000000;
+    }
+
+    .row .grid:last-child {
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>圈圈叉叉小遊戲</h1>
+  <div class="now-user"></div>
+  <div class="row-wrapper">
+    <div class="row top">
+      <div class="grid" data-value="1"></div>
+      <div class="grid" data-value="2"></div>
+      <div class="grid" data-value="3"></div>
+    </div>
+    <div class="row middle">
+      <div class="grid" data-value="4"></div>
+      <div class="grid" data-value="5"></div>
+      <div class="grid" data-value="6"></div>
+    </div>
+    <div class="row bottom">
+      <div class="grid" data-value="7"></div>
+      <div class="grid" data-value="8"></div>
+      <div class="grid" data-value="9"></div>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
